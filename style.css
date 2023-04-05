@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://dsm01pap009files.storage.live.com/y4mNVyVTkmVJiznayXWMJc9q_lLbpM4CAn3xctgfAEcdyKLVeMXCKVXQ26lOrBECPep4ZWkU5xH0u-AEblhrB-TUW7bNz-Wlo9pzU304WQaeH4GoiXQXp5W6wOVvKnQ-9INBWei8oUVIIvHIEfvXkOt-AvW8V1BxzMuHGDP65b5xkxCaVr7ZL8d_ZX02avzxG6p_FnTqu8a9Dt59zsheSV4ag?encodeFailures=1&width=1623&height=913");
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* align to the right */
+  margin-top: 150px;
+  margin-left: 8in; /* move 5 inches to the right */
+}
+
+.category {
+  margin: 5px;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 600px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.category h2 {
+  color: white;
+}
+
+.title {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dropdown {
+  display: none;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.description {
+  margin: 0;
+  padding: 0;
+}
+
+.category.active .dropdown {
+  display: block;
+  background-color: rgb(73, 109, 73);
+}
+
+.skills {
+  margin-top: 20px;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.skills h3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  /* Adjustments for mobile devices */
+
+  .categories {
+    align-items: center; /* align to the center */
+    margin-top: 50px;
+    margin-left: 0; /* reset margin left */
+  }
+
+  .category {
+    width: 90%; /* reduce width to 90% of container */
+  }
+
+  .dropdown {
+    padding: 10px; /* increase padding for better readability */
+  }
+}

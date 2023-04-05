@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dawn Johnson: Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="categories">
+        <div class="category">
+          <h2>About Me</h2>
+          <div class="dropdown">
+            <p>
+              Hi, I'm Dawn Johnson. I'm a full stack developer. I'm passionate 
+              about coding and constantly learning new technologies to stay up-to-date 
+              with the latest industry trends.  I enjoy
+              building beautiful and functional websites that solve real
+              problems. Feel free to contact me to discuss collaboration on any potential
+              projects!
+            </p>
+          </div>
+        </div>
+        <div class="category">
+          <h2>GitHub Projects</h2>
+          <div class="dropdown">
+            <a href="https://github.com/dawntj442022/ga-story.git">
+              <p>Project 1: A Love Story (Greek Methology)</p>
+            </a>
+            <a href="https://github.com/dawntj442022/Humans-of-New-York.git">
+              <p>Project 2 (version 1): Humans of New York (Blog Post) </p>
+            </a>
+            <a href="https://github.com/dawntj442022/Humans-of-New-York.git">
+                <p>Project 2 (version 2): Humans of New York (Blog Post) </p>
+              </a>
+            <a href="https://github.com/dawnj">
+              <p>Project 3: Movie Review App</p>
+            </a>
+          </div>
+        </div>
+        <div class="category">
+          <h2>Skills</h2>
+          <div class="dropdown">
+            <ul class="skills">
+                <ul>
+                    <li>HTML/</li><li>CSS/</li><li>JavaScript/</li>
+                    <li>React/</li><li>Node.js/</li><li>Mongoose/</li>
+                    <li>MongoDB/</li><li>Express/</li><li>Morgan/</li>
+                    <li>Python/</li><li>SQL/</li><li>Zustand/</li>
+                    <li>TypeScript</li>
+                  </ul>
+                </div>
+        </div>
+        <div class="category">
+          <h2>Resume</h2>
+          <div class="dropdown">
+            <a
+              href="https://www.linkedin.com/in/dawn-tenniel-johnson/overlay/1635522245729/single-media-viewer?type=DOCUMENT&profileId=ACoAADmcn7IBiJpFibocJf_fIYqtUHe-IZ3VjWc&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BLDjPPWcGT4GtJzmXluebnA%3D%3D"
+            >
+              <p>View my resume on LinkedIn!</p>
+            </a>
+          </div>
+        </div>
+        <div class="category">
+          <h2>LinkedIn</h2>
+          <div class="dropdown">
+            <a href="https://www.linkedin.com/in/dawn-tenniel-johnson/">
+              <p>Connect with me on LinkedIn!</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const categories = document.querySelectorAll(".category");
+      categories.forEach((category) => {
+        category.addEventListener("click", () => {
+          category.classList.toggle("active");
+          categories.forEach((c) => {
+            if (c != category) {
+              c.classList.remove("active");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
+
