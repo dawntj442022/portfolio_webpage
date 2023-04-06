@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dawn Johnson: Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -74,19 +75,6 @@
         </div>
       </div>
     </div>
-    <script>
-      const categories = document.querySelectorAll(".category");
-      categories.forEach((category) => {
-        category.addEventListener("click", () => {
-          category.classList.toggle("active");
-          categories.forEach((c) => {
-            if (c != category) {
-              c.classList.remove("active");
-            }
-          });
-        });
-      });
-    </script>
   </body>
 </html>
 
