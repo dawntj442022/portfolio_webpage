@@ -4,6 +4,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url("https://dsm01pap009files.storage.live.com/y4mNVyVTkmVJiznayXWMJc9q_lLbpM4CAn3xctgfAEcdyKLVeMXCKVXQ26lOrBECPep4ZWkU5xH0u-AEblhrB-TUW7bNz-Wlo9pzU304WQaeH4GoiXQXp5W6wOVvKnQ-9INBWei8oUVIIvHIEfvXkOt-AvW8V1BxzMuHGDP65b5xkxCaVr7ZL8d_ZX02avzxG6p_FnTqu8a9Dt59zsheSV4ag?encodeFailures=1&width=1623&height=913");
   background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -79,16 +82,27 @@ body {
   /* Adjustments for mobile devices */
 
   .categories {
-    align-items: center; /* align to the center */
+    align-items: baseline; /* align to the center */
     margin-top: 50px;
-    margin-left: 0; /* reset margin left */
+    margin-left: 60%; /* reset margin left */
+    max-width: 50%;
   }
 
   .category {
-    width: 90%; /* reduce width to 90% of container */
+    width: 80%; /* reduce width to 90% of container */
   }
 
   .dropdown {
     padding: 10px; /* increase padding for better readability */
+  }
+
+  body {
+    background-image: url("https://dsm01pap009files.storage.live.com/y4mNVyVTkmVJiznayXWMJc9q_lLbpM4CAn3xctgfAEcdyKLVeMXCKVXQ26lOrBECPep4ZWkU5xH0u-AEblhrB-TUW7bNz-Wlo9pzU304WQaeH4GoiXQXp5W6wOVvKnQ-9INBWei8oUVIIvHIEfvXkOt-AvW8V1BxzMuHGDP65b5xkxCaVr7ZL8d_ZX02avzxG6p_FnTqu8a9Dt59zsheSV4ag?encodeFailures=1&width=1623&height=913");
+    background-size: 145vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }

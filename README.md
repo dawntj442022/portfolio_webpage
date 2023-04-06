@@ -7,3 +7,9 @@ Then copy Link.
 
 Heroku:
 heroku git: remote -a ga-story
+https://git.heroku.com/portfolio-webpage.git
+
+1. https://git.heroku.com/ga-story.git
+2. Version 1: https://git.heroku.com/humansofnewyork.git
+3. Version 2:
+4.
