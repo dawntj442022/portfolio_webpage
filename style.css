@@ -19,9 +19,9 @@ body {
 .categories {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* align to the right */
+  align-items: flex-end;
   margin-top: 150px;
-  margin-left: 8in; /* move 5 inches to the right */
+  margin-left: 8in;
 }
 
 .category {
@@ -82,18 +82,18 @@ body {
   /* Adjustments for mobile devices */
 
   .categories {
-    align-items: baseline; /* align to the center */
+    align-items: baseline;
     margin-top: 50px;
-    margin-left: 60%; /* reset margin left */
+    margin-left: 60%;
     max-width: 50%;
   }
 
   .category {
-    width: 80%; /* reduce width to 90% of container */
+    width: 80%;
   }
 
   .dropdown {
-    padding: 10px; /* increase padding for better readability */
+    padding: 10px;
   }
 
   body {
